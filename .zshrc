@@ -144,7 +144,6 @@ docker() {
             --env="DISPLAY" \
             --env="QT_X11_NO_MITSHM=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --privileged \
-            --volume="/home/$user/Nimpra_Shared:/root/Shared:rw" \
             --device=/dev/usb \
             --device=/dev/video0 \
             --gpus all \
@@ -158,3 +157,12 @@ docker() {
         command docker $@
     fi
 }
+
+eval "$(zoxide init zsh)"
+
+alias cd=z
+alias cdi=zi
+
+alias c="clear"
+alias cpy="xclip-copyfile"
+alias pst="xclip-pastefile"
