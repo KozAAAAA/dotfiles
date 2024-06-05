@@ -171,4 +171,4 @@ alias ct="xclip-cutfile"
 
 alias kitty="setsid kitty"
 
-alias drag="fzf | dragon -x -I"
+alias drag="fzf --multi | dragon -x -I"
